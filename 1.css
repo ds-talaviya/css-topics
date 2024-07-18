@@ -1,3 +1,25 @@
-.custom-cursor {
-    cursor: url("cursor.png"), pointer;
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+.item {
+    background-color: lightcoral;
+    border: 2px solid black;
+    margin: 1rem;
+}
+
+#item-1 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+.child-div{
+    background-color: antiquewhite;
+    border: 2px solid black;
 }
